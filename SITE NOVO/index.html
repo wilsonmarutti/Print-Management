@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>P.M - Print Management</title>
+  <link href="https://fonts.googleapis.com/css?family=Lato: 100,300,400,700|Luckiest+Guy|Oxygen:300,400" rel="stylesheet">
+  <link href="style.css" type="text/css" rel="stylesheet">
+
+  <script>
+        function Verificar()
+            {
+                if(login.value=="")
+                { 
+                    alert("Digite seu login");
+                    r.innerHTML+="Digite seu login <br>";
+                }
+                if(senha.value=="")
+                { 
+                    alert("Digite sua senha");
+                    r.innerHTML+="Digite sua senha <br>";
+                    
+                }                 
+            
+            
+            }
+
+            function Gravar()
+            {
+                var usertxt = "wilsonmarutti"; 
+                var chavetxt="123456";
+
+                if (user.value!=usertxt)
+                {
+                    alert("Login incorreto");
+                }
+                if (chave.value!=chavetxt)
+                {
+                    alert("Senha incorreto")
+                }
+
+                else{
+                    location.href="./pginicial.html";
+                    }
+
+                
+            }
+            
+    
+        
+     
+     </script>
+</head>
+<body>
+    
+
+        <div style="max-width: 500px; margin: auto">
+
+  
+  
+  <table>  
+      <tbody>
+            <tr>
+                <td>Login</td>
+                <td> 
+                    <input type="text" id="user">
+                </td>
+            </tr>
+            <tr>
+                <td>Senha</td>
+                    <td>
+                        <input type="password" id="chave">
+                    </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                        <button class='bt' type='submit'
+                            onclick="Gravar()" a href="./pginicial.html">
+                            Entrar
+                        </button> <br><div id="r"></div>
+                        
+                </td>
+            </tr>
+        </tbody>
+     </table>
+
+
+</body>
+</html>

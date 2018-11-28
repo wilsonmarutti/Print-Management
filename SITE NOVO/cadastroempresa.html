@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+        <title>P.M - Cadastro Empresarial</title>
+        <link href="https://fonts.googleapis.com/css?family=Lato: 100,300,400,700|Luckiest+Guy|Oxygen:300,400" rel="stylesheet">
+        <link href="style.css" type="text/css" rel="stylesheet">
+        <script>
+            
+
+            function Gravar()
+            {
+                document.getElementById("frmpesquisa").reset(); 
+
+                
+            }
+        
+        </script>
+    </head>
+    <body>
+        
+            <ul class="navigation">
+                    <li></li>
+                    <li> <a href="./pginicial.html">Início</a></li>
+                    <li></li>
+                    <li><a href="./impressao.html">impressão</a></li>
+                    <li></li>
+                    <li><a href="./cadastroempresa.html">Cadastro</a></li>
+                    <li></li>
+                    <li><a href="./relatorio.html">Relatório</a></li>
+                    <li></li>
+                    <li><a href="./contato.html">Contato</a></li>
+                    <li></li>
+                    <li>Fone:(47)99787-1515</li>
+                </ul>
+        
+            
+        
+        
+            
+       
+        <div class="topo">Cadastramento de Empresas </div>
+        <table>
+             <form name="frmpesquisa" id="frmpesquisa" onsubmit="return validaPesquisa()">
+                <thead>
+                    <tr>
+                        <th colspan="2"> Informações Básicas</th>
+                        
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Razão Social</td>
+                        <td> 
+                            <input type="text" id="nome"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>CNPJ</td>
+                        <td>
+                            <input maxlength="14" type ="text"id="cpf"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td> Data de Constituição</td>
+                        <td> 
+                            <input type="date" id="data de nascimento"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Regime de Imposto</td>
+                        <td>
+                            <select id="imposto">
+                                <option>  </option>
+                                <option>Simples Nacional</option>
+                                <option>Lucro Presumido</option>
+                                <option>Lucro Real</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Login</td>
+                        <td>
+                            <input type="text" id="login"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Senha</td>
+                        <td>
+                            <input type="password" id="senha"/>
+                        </td>
+                    </tr>
+                    <tr>
+                            <td>Repita sua Senha</td>
+                            <td>
+                                <input type="password" id="senha"/>
+                            </td>
+                        </tr>
+                    <tr>
+                        <td colspan="2">
+                                    <button class='bt' type='submit'
+                                    onclick="Gravar()" a href="./pginicial.html">
+                                        Gravar
+                                    </button> <br><div id="r"></div>
+                            </td>
+                    </tr>
+                </tbody>   
+             </form>    
+        </table>   
+        
+</body>
+</html>

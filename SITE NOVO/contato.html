@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>P.M - Mensagem</title>
+        <link href="https://fonts.googleapis.com/css?family=Lato: 100,300,400,700|Luckiest+Guy|Oxygen:300,400" rel="stylesheet">
+        <link href="style.css" type="text/css" rel="stylesheet">
+        <script>
+            
+
+            function Gravar()
+            {
+                var usertxt = "wilsonmarutti"; 
+                var chavetxt="123456";
+
+                if (user.value!=usertxt)
+                {
+                    alert("Preencha todos os campos");
+                }
+                
+
+                else{
+                    alert("Mensagem enviada com sucesso")
+                    location.href="./pginicial.html";
+                    }
+                    
+                    document.getElementById("frmpesquisa").reset();                    
+
+                
+            }
+        
+            
+        </script>
+        
+    </head>
+    <body>
+        
+            <ul class="navigation">
+                    <li></li>
+                    <li> <a href="./pginicial.html">Início</a></li>
+                    <li></li>
+                    <li><a href="./impressao.html">impressão</a></li>
+                    <li></li>
+                    <li><a href="./cadastroempresa.html">Cadastro</a></li>
+                    <li></li>
+                    <li><a href="./relatorio.html">Relatório</a></li>
+                    <li></li>
+                    <li><a href="./contato.html">Contato</a></li>
+                    <li></li>
+                    <li>Fone:(47)99787-1515</li>
+                </ul>
+        
+            
+        <div class="topo">Contato</div>
+        
+            
+            <table>
+                <form name="frmpesquisa" id="frmpesquisa" onsubmit="return validaPesquisa()">
+                    <tr>
+                    <td>
+                    <label for="nome">E-mail: </label>               
+                    </td>
+                    <td align="left">
+                        <input type="text" name="email">
+                    </td>
+                    </tr>
+                    <tr>
+                        <td> 
+                            <label for="Assunto"> Assunto</label>
+                        </td>
+                        <td><input type="text"> </td>
+                    </tr>
+                    <tr>
+                        <td>
+                           <label for="Mensagem">Mensagem: </label>
+                        </td>
+                        <td>
+                            <textarea></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                        <label>Anexo:</label>
+                        </td>
+                        <td>
+                        <input class="anexo" type="file" name="imagem" >
+                        </td>
+                    </tr>    
+                    <tr>
+                        <td colspan="2">
+                        <button class='bt' type='submit'
+                            onclick="Gravar()" a href="">
+                                Enviar
+                        </button> <br><div id="r"></div>
+                        </td>
+                    </tr>
+                </form>
+            </table>
+            
+       
+
+
+
+
+
+
+    
+    </body> 
+</html>      
